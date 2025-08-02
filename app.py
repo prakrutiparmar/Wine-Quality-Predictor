@@ -1,6 +1,18 @@
 import streamlit as st
 import pickle 
 import numpy as np
+import os
+
+model_path = 'winequality.pkl'
+
+if not os.path.exists(model_path):
+    st.error(f"Model file not found at: {model_path}")
+else:
+    try:
+        with open(model_path, 'rb') as f:
+            model = pickle.load(f)
+    except Exception as e:
+        st.error(f"Failed to load model: {e}")
 
 with open('wine_quality_pred.pkl', 'rb') as f:
     model = pickle.load(f)

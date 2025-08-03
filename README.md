@@ -38,7 +38,7 @@ This project is a simple yet effective **machine learning web application** that
 ### 1. Clone the Repository, Install Dependencies & Run the App
 ```bash
 # Step 1: Clone the repository
-git clone https://github.com/YOUR_USERNAME/wine-quality-predictor.git
+git clone https://github.com/prakrutiparmar/wine-quality-predictor.git
 cd wine-quality-predictor
 
 # Step 2: Install dependencies
